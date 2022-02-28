@@ -1,8 +1,4 @@
-// 1.
-//  Using the filter method, filter out the sedans.
-// output =>
-//  { brand: 'Toyota', model: 'camry', type: 'sedan' },
-//   { brand: 'Hyundai', model: 'Sonata', type: 'sedan' }
+// ================Question 1=====================
 const carBrands = [
     { brand: "Ford", model: "mustang", type: "convertible" },
     { brand: "Toyota", model: "camry", type: "sedan" },
@@ -13,13 +9,11 @@ const carBrands = [
   ];
 
 const sedanCars = carBrands.filter(brand => brand.type === 'sedan')
+conosole.log(sedanCars)
+// ==============Question 1 End===================
   
-  /* 2.
-   * reverseString takes a string
-   * and should return the reverse of the string, you cannot use .reverse method
-   * e.g., reverseString('cat') => 'tac'
-   */
 
+// ================Question 2=====================
 const reverseString = (string) => {
     console.log(string)
     let reversedString = ''
@@ -29,24 +23,17 @@ const reverseString = (string) => {
     return reversedString
 }
 
-// console.log(reverseString('helloworld'))
+console.log(reverseString('helloworld'))
+// ==============Question 2 End===================
   
-//   // 3.
-//   // Using Reduce,
-//   // Given an array of all your wishlist items, figure out
-//   // how much it would cost to just buy everything at once
-//   // In other words, the total of all the prices in the array
-//   // of objects
-//   // The output should eqaute to 227005
-  let wishlist = [
-    { title: "tesla", price: 90000 },
-    { title: "tesla", price: 45000 },
-    { title: "tesla", price: 5 },
-    { title: "tesla", price: 2000 },
-    { title: "tesla", price: 90000 },
-  ];
-//   function shop(arr) {}
-//   console.log(shop(wishlist));
+// ================Question 3=====================
+let wishlist = [
+  { title: "tesla", price: 90000 },
+  { title: "tesla", price: 45000 },
+  { title: "tesla", price: 5 },
+  { title: "tesla", price: 2000 },
+  { title: "tesla", price: 90000 },
+];
 
 const shop = (cart) => {
     let total = 0
@@ -56,13 +43,9 @@ const shop = (cart) => {
 }
 
 console.log(shop(wishlist))
+// ==============Question 3 End===================
   
-//   // 4.
-//   //Explain recursion in your own words,
-//   // give an example of a recursive algorithm, and explain how it works
-//   //Make sure to detail the steps that make up a recursive algorithm
-//   // A detailed explanation.
-
+// ================Question 4=====================
 /*
     Recursion is form of looping where in this case, the fucntion will be calling itself
     until it hits an end case. An example of this, is when summing all nodes in a binary tree.
@@ -146,3 +129,5 @@ console.log(shop(wishlist))
     it will then execute the previous function call and add more to the stack as needed. This concept is also known as
     LIFO (Last in first out) since the most top function call will execute first before the rest.
 */
+
+// ================Question 4 End=====================
